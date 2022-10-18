@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan (OutPut)</title>
+  </head>
+  <body style="max-width: 1000px; border: 3px solid black; margin: auto; @media only screen and (max-width: 600px);">
+    <header style="background-color: lightgray">
+      <nav style="display: flex; align-items: center; padding: 10px; border-bottom: 1px solid black">
+        <ul style="display: flex; list-style-type: none; gap: 100px">
+            <li>
+                <a href="/category">Home</a> |
+              </li>
+              <li>
+            <li>
+            <a href="/category">Generate Link</a> |
+          </li>
+          <li>
+            <a href="/events">Transaction History</a> |
+          </li>
+          <li>
+            <a href="/contact">Policy</a> |
+          </li>
+          <li>
+            <a href="/contact">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <form>
+    <div>
+      <section style="float:left;">
+          <thead>
+          <img src="img/sus.png" alt="" style="width: 150px; height: 400x;">
+          <p><button type="file">Upload picture</button></p>  
+      </thead>
+      </section>
+    </div>
+    <div></div>
+      <tbody>
+        <tr>
+            <td><label for="name"><b>Title Here</b></label></td>
+            <td><b>:</b>MacBoock Air $800</td>
+        </tr>
+        <p></p><tr>
+          <td><label for="delivery"><b>Description</b></label></td>
+          <td><b>:</b>Year : 2009 <p>Model:</p><P>Condition:Mint</P></td>
+      </tr></p>
+      <tr>
+        <td><label for="Account"><b>Total Amount</b></label></td>
+        <td><b>:</b>$800</td>
+    </tr>
+    <p><tr>
+        <td><label for="Account"><b>Pay To</b></label></td>
+        <td><b>:</b>123-456-789-0</td>
+    </tr></p>
+    <p><label for="bank"><b>Payment Type :</b></label>
+    <select name="name" id="name">
+      <option value="1">Visa Debit</option>
+      <option value="2">BRI</option>
+      <option value="3">Bank MEGA</option>
+    </select></p>
+    <tr>
+      <td><label for="name"><b>Account Holder</b></label></td>
+      <td><b>:</b><input type="text" id="name"></td>
+    </tr>
+    <p><tr>
+        <td><label for="name"><b>Account No</b></label></td>
+        <td><b>:</b><input type="text" id="name"></td>
+      </tr></p>
+    <ul style="list-style: none;">
+      <li>
+      <input type="checkbox" id="Mobile">
+      <label for="Mobile">Send to Mobile Phone</label>
+  </li>
+  <li>
+      <input type="checkbox" id="Email">
+      <label for="Email">Send To Email</label>
+  </li>
+    </ul>
+  <tr>
+    <td><label for="hp"><b>Send To Mobile Phone</b></label></td>
+    <td><b>:</b><input type="number" id="hp"></td>
+  </tr>
+  <p><tr>
+    <td><label for="email"><b>Send To Email</b></label></td>
+    <td><b>:</b><input type="email" id="email"></td>
+  </tr></p>
+    </tbody>
+    <button type="submit">Pay Using QuidLink</button>
+    </div>
+  </form>
+  </body>
+</html>

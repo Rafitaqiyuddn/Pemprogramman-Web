@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan (input)</title>
+  </head>
+  <body style="max-width: 1000px; border: 3px solid black; margin: auto; @media only screen and (max-width: 600px);">
+    <header style="background-color: lightgray">
+      <nav style="display: flex; align-items: center; padding: 10px; border-bottom: 1px solid black">
+        <ul style="display: flex; list-style-type: none; gap: 100px">
+            <li>
+                <a href="/category">Home</a> |
+              </li>
+              <li>
+            <li>
+            <a href="/category">Generate Link</a> |
+          </li>
+          <li>
+            <a href="/events">Transaction History</a> |
+          </li>
+          <li>
+            <a href="/contact">Policy</a> |
+          </li>
+          <li>
+            <a href="/contact">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <form action="SI12_Rafi_0110122097_Output.html">
+    <div>
+      <section style="float:left;">
+          <thead>
+          <img src="img/sus.png" alt="" style="width: 150px; height: 100x;">
+          <p><button type="file">Upload picture</button></p>  
+      </thead>
+      </section>
+    </div>
+    <div></div>
+      <tbody>
+        <tr>
+            <td><label for="name"><b>Title Here</b></label></td>
+            <td><b>:</b><input type="text" id="name"></td>
+        </tr>
+        <p></p><tr>
+          <td><label for="delivery"><b>Description</b></label></td>
+          <td><b>:</b><textarea type="text" id="delivery"></textarea></td>
+      </tr></p>
+      <tr>
+        <td><label for="Account"><b>Account Number</b></label></td>
+        <td><b>:</b><input type="number" id="Account"></td>
+    </tr>
+    <p><label for="bank"><b>Bank :</b></label>
+    <select name="name" id="name">
+      <option value="1">BCA</option>
+      <option value="2">BRI</option>
+      <option value="3">Bank MEGA</option>
+    </select></p>
+    <tr>
+      <td><label for="name"><b>Account Holder</b></label></td>
+      <td><b>:</b><input type="text" id="name"></td>
+    </tr>
+    </p><label for="bank"><b>Transaction :</b></label>
+    <select name="number" id="number">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <ul style="list-style: none;">
+      <li>
+      <input type="checkbox" id="Mobile">
+      <label for="Mobile">Send to Mobile Phone</label>
+  </li>
+  <li>
+      <input type="checkbox" id="Email">
+      <label for="Email">Send To Email</label>
+  </li>
+    </ul>
+  <tr>
+    <td><label for="hp"><b>Send To Mobile Phone</b></label></td>
+    <td><b>:</b><input type="number" id="hp"></td>
+  </tr>
+  <p><tr>
+    <td><label for="email"><b>Send To Email</b></label></td>
+    <td><b>:</b><input type="email" id="email"></td>
+  </tr></p>
+    </tbody>
+    <button type="submit">Generade Nabr Link</button>
+    </div>
+  </form>
+  </body>
+</html>
