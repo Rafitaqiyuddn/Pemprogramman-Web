@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkiran Mall Depok City</title>
+</head>
+<body>
+    <h2>Harga Parkiran Mall Depok City</h2>
+    <hr>
+    <label for="in">Jam Masuk</label>
+    <input type="number" id="in">
+    <br>
+    <br>
+    <label for="out">Jam Keluar</label>
+    <input type="number" id="out">
+    <br>
+    <span id="durasi"></span>
+    <br>
+    <span id="harga"></span>
+    <br>
+    <button type="button" onclick="hitung_parkir()">Hitung</button>
+
+    <script>
+        function hitung_parkir(){
+            let jm = document.getElementById("in").value;
+            let jk = document.getElementById("out").value;
+            let durasi = jk-jm;
+
+            let ta = 3000;
+            let sw = Math.round(durasi-2);
+            let tl = sw*1000;
+            let th = ta + tl;
+
+            document.getElementById("durasi").innerHTML = "Durasi = " + durasi + " jam";
+            document.getElementById("harga").innerHTML = "Harga = RP. " + th;
+         }
+    </script>
+
+</body>
+</html>
